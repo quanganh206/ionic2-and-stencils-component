@@ -7,20 +7,20 @@ import { Component } from '@angular/core';
  * Components.
  */
 @Component({
-    selector: 'counter-wrapper',
-    templateUrl: 'counter-wrapper.html'
+    selector: 'stop-watch-wrapper',
+    templateUrl: 'stop-watch-wrapper.html'
 })
-export class CounterWrapperComponent {
+export class StopWatchWrapperComponent {
 
     message: string;
 
     constructor() {
-        console.log('Hello CounterWrapperComponent Component');
+        console.log('Hello StopWatchWrapperComponent Component');
     }
 
     handleMessageEvent(ev) {
         this.message = ev.detail;
-        console.log('Received event from component: ', this.message);
+        console.log('Received event from StopWatch component: ', this.message);
     }
 
 }

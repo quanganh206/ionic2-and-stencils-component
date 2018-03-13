@@ -1,0 +1,18 @@
+{
+  "namespace": "stopwatch",
+  "fsNamespace": "stopwatch",
+  "loader": "../stopwatch.js",
+  "core": "stopwatch.core.js",
+  "corePolyfilled": "es5-build-disabled.js",
+  "components": {
+    "my-component": {
+      "$": "my-component"
+    },
+    "stop-watch": {
+      "$": "stop-watch"
+    },
+    "stop-watch-box": {
+      "$": "stop-watch"
+    }
+  }
+}

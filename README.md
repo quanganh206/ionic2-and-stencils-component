@@ -1,6 +1,6 @@
-# Ionic-Test-Stencil-Web-Component
+# ionic2-and-stencils-component
 
-Sample project that shows an integration of [counter demo web component build with StencilJS](https://github.com/abritopach/stencil-counter) 
+Sample project that shows an integration of [Stop Watch demo web component build with StencilJS](https://github.com/quanganh206/stencil-stop-watch) 
 in Ionic Demo App.
 
 ## Running
@@ -10,28 +10,14 @@ Before you go through this example, you should have at least a basic understandi
 * Test in localhost:
 
 ```bash
-https://github.com/abritopach/ionic-test-stencil-web-component
+git clone https://github.com/quanganh206/ionic2-and-stencils-component.git
 ```
 
-To run it, cd into `ionic-test-stencil-web-component` and run:
+To run it, cd into `ionic2-and-stencils-component` and run:
 
 ```bash
 npm install
 ionic serve
-```
-
-* Test in Android: 
-
-```bash
-ionic cordova add platform android
-ionic cordova run android
-```
-
-* Test in iOS: 
-
-```bash
-ionic cordova add platform ios
-ionic cordova run ios
 ```
 
 ## Integrate Web Component in Ionic
@@ -64,13 +50,13 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 
-import { CounterWrapperComponent } from '../components/counter-wrapper/counter-wrapper';
+import { StopWatchWrapperComponent } from '../components/stop-watch-wrapper/stop-watch-wrapper';
 
 @NgModule({
     declarations: [
         MyApp,
         HomePage,
-        CounterWrapperComponent
+        StopWatchWrapperComponent
     ],
     imports: [
         BrowserModule,
@@ -103,9 +89,9 @@ export class AppModule {}
 </ion-header>
 
 <ion-content padding>
-    <counter-wrapper>
-        <my-counter start="10" min="0" max="100" step="5"></my-counter>
-    </counter-wrapper>
+    <stop-watch-wrapper>
+        <stop-watch-box></stop-watch-box>
+    </stop-watch-wrapper>
 </ion-content>
 ```
 
@@ -113,16 +99,3 @@ export class AppModule {}
 
 * [Node.js](http://nodejs.org/)
 * [Ionic Cordova](https://ionicframework.com/docs/intro/installation/)
-
-## License
-   
-The MIT License (MIT) Copyright (c)
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-   
-Original work Copyright (c) 2017 Adrián Brito
-

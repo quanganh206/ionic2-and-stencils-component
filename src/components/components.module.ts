@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
-import { CounterWrapperComponent } from './counter-wrapper/counter-wrapper';
+
 @NgModule({
-	declarations: [CounterWrapperComponent],
+	declarations: [],
 	imports: [],
-	exports: [CounterWrapperComponent]
+	exports: []
 })
 export class ComponentsModule {}

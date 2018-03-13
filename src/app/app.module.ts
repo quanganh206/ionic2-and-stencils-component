@@ -7,13 +7,13 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 
-import { CounterWrapperComponent } from '../components/counter-wrapper/counter-wrapper';
+import { StopWatchWrapperComponent } from '../components/stop-watch-wrapper/stop-watch-wrapper';
 
 @NgModule({
     declarations: [
         MyApp,
         HomePage,
-        CounterWrapperComponent
+        StopWatchWrapperComponent
     ],
     imports: [
         BrowserModule,
