@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
+import { StopWatchWrapperComponent } from './stop-watch-wrapper/stop-watch-wrapper'
 
 @NgModule({
-	declarations: [],
+	declarations: [StopWatchWrapperComponent],
 	imports: [],
-	exports: []
+	exports: [StopWatchWrapperComponent]
 })
 export class ComponentsModule {}
