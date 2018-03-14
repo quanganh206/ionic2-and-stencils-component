@@ -9,7 +9,9 @@ import { HomePage } from '../pages/home/home';
 
 // import { StopWatchWrapperComponent } from '../components/stop-watch-wrapper/stop-watch-wrapper';
 
-import { ComponentsModule } from '../components/components.module';
+// import { ComponentsModule } from '../components/components.module';
+
+import { IonWrapperModule } from 'stencils-ionic-wrapper';
 
 @NgModule({
     declarations: [
@@ -20,7 +22,8 @@ import { ComponentsModule } from '../components/components.module';
     imports: [
         BrowserModule,
         IonicModule.forRoot(MyApp),
-        ComponentsModule
+        // ComponentsModule,
+        IonWrapperModule
     ],
     bootstrap: [IonicApp],
     entryComponents: [
